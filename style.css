@@ -1,0 +1,211 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #F7E7CE;
+    color: #102C26;
+}
+
+/* Navigation */
+nav {
+    background-color: #102C26;
+    padding: 20px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo-main {
+    font-size: 32px;
+    font-weight: 900;
+    letter-spacing: 6px;
+    color: #F7E7CE;
+    font-family: Georgia, serif;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #F7E7CE;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #C4A484;
+}
+
+/* Home */
+.home {
+    height: 100vh;
+    background: linear-gradient(rgba(16,44,38,0.6)),
+    url("Image/background.jpg") no-repeat center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.home-content {
+    color: #F7E7CE;
+}
+
+.home h1 {
+    font-size: 80px;
+    margin-bottom: 20px;
+}
+
+.home button {
+    padding: 14px 30px;
+    background-color: #F7E7CE;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.home button:hover {
+    background-color: #C4A484;
+}
+
+/* Sections */
+section {
+    padding: 100px 60px;
+    text-align: center;
+}
+
+/* Menu, Signature, Reviews */
+.menu-container,
+.signature-container,
+.reviews-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+
+.menu-card,
+.signature-card,
+.review-card {
+    background-color: #102C26;
+    color: #F7E7CE;
+    width: 280px;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* Signature Background */
+.signature {
+    background-color: #C6A75E;
+}
+
+/* Images */
+.menu-card img,
+.signature-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+/* Reviews */
+.review-card h4 {
+    margin-top: 15px;
+    color: #C4A484;
+}
+
+/* Reservation */
+.reservation {
+    background-color: #C6A75E;
+}
+
+.reservation form {
+    max-width: 400px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.reservation input {
+    padding: 14px;
+    margin-bottom: 18px;
+    border: 1px solid #102C26;
+}
+
+.reservation button {
+    padding: 14px;
+    background-color: #102C26;
+    color: #F7E7CE;
+    border: none;
+    cursor: pointer;
+}
+
+/* About */
+.about-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.about-container img {
+    width: 750px;
+    height: 600px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.about-text {
+    text-align: justify;
+    max-width: 520px;
+    font-size: 18px; 
+    line-height: 1.6; 
+}
+
+/* Contact */
+.contact {
+    background-color: #102C26;
+    color: #F7E7CE;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    text-align: left;
+}
+
+.contact-map {
+    width: 400px;
+}
+
+/* Footer */
+footer {
+    background-color: #0b1f1b;
+    color: #F7E7CE;
+    text-align: center;
+    padding: 25px;
+}
